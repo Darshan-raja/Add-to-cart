@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cartContainer.innerHTML = "";
     let total = 0;
     cart.forEach((item) => {
+      
       const cartItem = document.createElement("li");
       cartItem.className = "list-group-item";
       cartItem.textContent = `${item.name} - ₹${item.price}`;
